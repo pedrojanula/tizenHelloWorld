@@ -52,7 +52,9 @@ create_base_gui(appdata_s *ad)
 	/* Create an actual view of the base gui.
 	   Modify this part to change the view. */
 	ad->label = elm_label_add(ad->conform);
-	elm_object_text_set(ad->label, "<align=center>Hello Tizen</align>");
+	elm_object_text_set(ad->label, "<align=center><h1>Hello World!</h1></align><br>"
+	         "<br>"
+	         "<wrap = word>This is my first Tizen app. By pedrojanula ;).</wrap>");
 	evas_object_size_hint_weight_set(ad->label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
 	elm_object_content_set(ad->conform, ad->label);
 
